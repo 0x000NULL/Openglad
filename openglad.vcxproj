@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F0E538D-3BDB-AD98-64F4-9B405020E326}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>openglad</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Debug\</OutDir>
+    <IntDir>obj\Debug\</IntDir>
+    <TargetName>openglad</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>openglad</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\Release\</OutDir>
+    <IntDir>obj\Release\</IntDir>
+    <TargetName>openglad</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>openglad</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PHYSFS_SUPPORTS_ZIP;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\external\libyaml;src\external\libzip;src\external\micropather;src\external\physfs;src\external\yam;src\external\libyaml\include;src\external\libyaml\src;src\external\physfs\archivers;src\external\physfs\extras;src\external\physfs\platform;src\external\physfs\zlib123;src\external\physfs\extras\PhysFS.NET;src\external\physfs\extras\physfs_rb;src\external\physfs\extras\PhysFS.NET\TestApp;src\external\physfs\extras\physfs_rb\physfs;src\external\physfs\extras\physfs_rb\physfs\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>-std=gnu++0x %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;png.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PHYSFS_SUPPORTS_ZIP;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\external\libyaml;src\external\libzip;src\external\micropather;src\external\physfs;src\external\yam;src\external\libyaml\include;src\external\libyaml\src;src\external\physfs\archivers;src\external\physfs\extras;src\external\physfs\platform;src\external\physfs\zlib123;src\external\physfs\extras\PhysFS.NET;src\external\physfs\extras\physfs_rb;src\external\physfs\extras\PhysFS.NET\TestApp;src\external\physfs\extras\physfs_rb\physfs;src\external\physfs\extras\physfs_rb\physfs\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>-std=gnu++0x %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;png.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PHYSFS_SUPPORTS_ZIP;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\external\libyaml;src\external\libzip;src\external\micropather;src\external\physfs;src\external\yam;src\external\libyaml\include;src\external\libyaml\src;src\external\physfs\archivers;src\external\physfs\extras;src\external\physfs\platform;src\external\physfs\zlib123;src\external\physfs\extras\PhysFS.NET;src\external\physfs\extras\physfs_rb;src\external\physfs\extras\PhysFS.NET\TestApp;src\external\physfs\extras\physfs_rb\physfs;src\external\physfs\extras\physfs_rb\physfs\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>-std=gnu++0x %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;png.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PHYSFS_SUPPORTS_ZIP;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\external\libyaml;src\external\libzip;src\external\micropather;src\external\physfs;src\external\yam;src\external\libyaml\include;src\external\libyaml\src;src\external\physfs\archivers;src\external\physfs\extras;src\external\physfs\platform;src\external\physfs\zlib123;src\external\physfs\extras\PhysFS.NET;src\external\physfs\extras\physfs_rb;src\external\physfs\extras\PhysFS.NET\TestApp;src\external\physfs\extras\physfs_rb\physfs;src\external\physfs\extras\physfs_rb\physfs\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>-std=gnu++0x %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;png.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\base.h" />
+    <ClInclude Include="src\button.h" />
+    <ClInclude Include="src\campaign_picker.h" />
+    <ClInclude Include="src\colors.h" />
+    <ClInclude Include="src\effect.h" />
+    <ClInclude Include="src\external\libyaml\include\yaml.h" />
+    <ClInclude Include="src\external\libyaml\src\config.h" />
+    <ClInclude Include="src\external\libyaml\src\yaml_private.h" />
+    <ClInclude Include="src\external\libzip\config.h" />
+    <ClInclude Include="src\external\libzip\zip.h" />
+    <ClInclude Include="src\external\libzip\zipconf.h" />
+    <ClInclude Include="src\external\libzip\zipint.h" />
+    <ClInclude Include="src\external\micropather\micropather.h" />
+    <ClInclude Include="src\external\physfs\extras\physfsrwops.h" />
+    <ClInclude Include="src\external\physfs\physfs.h" />
+    <ClInclude Include="src\external\physfs\physfs_casefolding.h" />
+    <ClInclude Include="src\external\physfs\physfs_internal.h" />
+    <ClInclude Include="src\external\physfs\physfs_platforms.h" />
+    <ClInclude Include="src\external\physfs\zlib123\crc32.h" />
+    <ClInclude Include="src\external\physfs\zlib123\deflate.h" />
+    <ClInclude Include="src\external\physfs\zlib123\inffast.h" />
+    <ClInclude Include="src\external\physfs\zlib123\inffixed.h" />
+    <ClInclude Include="src\external\physfs\zlib123\inflate.h" />
+    <ClInclude Include="src\external\physfs\zlib123\inftrees.h" />
+    <ClInclude Include="src\external\physfs\zlib123\trees.h" />
+    <ClInclude Include="src\external\physfs\zlib123\zconf.h" />
+    <ClInclude Include="src\external\physfs\zlib123\zlib.h" />
+    <ClInclude Include="src\external\physfs\zlib123\zutil.h" />
+    <ClInclude Include="src\external\yam\yam.h" />
+    <ClInclude Include="src\gloader.h" />
+    <ClInclude Include="src\gparser.h" />
+    <ClInclude Include="src\graph.h" />
+    <ClInclude Include="src\guy.h" />
+    <ClInclude Include="src\input.h" />
+    <ClInclude Include="src\io.h" />
+    <ClInclude Include="src\level_data.h" />
+    <ClInclude Include="src\level_picker.h" />
+    <ClInclude Include="src\living.h" />
+    <ClInclude Include="src\obmap.h" />
+    <ClInclude Include="src\pal32.h" />
+    <ClInclude Include="src\palettes.h" />
+    <ClInclude Include="src\picker.h" />
+    <ClInclude Include="src\pixdefs.h" />
+    <ClInclude Include="src\pixie.h" />
+    <ClInclude Include="src\pixie_data.h" />
+    <ClInclude Include="src\pixien.h" />
+    <ClInclude Include="src\radar.h" />
+    <ClInclude Include="src\results_screen.h" />
+    <ClInclude Include="src\sai2x.h" />
+    <ClInclude Include="src\save_data.h" />
+    <ClInclude Include="src\screen.h" />
+    <ClInclude Include="src\smooth.h" />
+    <ClInclude Include="src\soundob.h" />
+    <ClInclude Include="src\sounds.h" />
+    <ClInclude Include="src\stats.h" />
+    <ClInclude Include="src\text.h" />
+    <ClInclude Include="src\treasure.h" />
+    <ClInclude Include="src\util.h" />
+    <ClInclude Include="src\version.h" />
+    <ClInclude Include="src\video.h" />
+    <ClInclude Include="src\view.h" />
+    <ClInclude Include="src\view_sizes.h" />
+    <ClInclude Include="src\walker.h" />
+    <ClInclude Include="src\weap.h" />
+    <ClInclude Include="util\savepng.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\campaign_picker.cpp" />
+    <ClCompile Include="src\effect.cpp" />
+    <ClCompile Include="src\external\libyaml\src\api.c" />
+    <ClCompile Include="src\external\libyaml\src\dumper.c" />
+    <ClCompile Include="src\external\libyaml\src\emitter.c" />
+    <ClCompile Include="src\external\libyaml\src\loader.c" />
+    <ClCompile Include="src\external\libyaml\src\parser.c" />
+    <ClCompile Include="src\external\libyaml\src\reader.c" />
+    <ClCompile Include="src\external\libyaml\src\scanner.c" />
+    <ClCompile Include="src\external\libyaml\src\writer.c" />
+    <ClCompile Include="src\external\libzip\mkstemp.c" />
+    <ClCompile Include="src\external\libzip\zip_add.c" />
+    <ClCompile Include="src\external\libzip\zip_add_dir.c" />
+    <ClCompile Include="src\external\libzip\zip_add_entry.c" />
+    <ClCompile Include="src\external\libzip\zip_close.c" />
+    <ClCompile Include="src\external\libzip\zip_delete.c" />
+    <ClCompile Include="src\external\libzip\zip_dir_add.c" />
+    <ClCompile Include="src\external\libzip\zip_dirent.c" />
+    <ClCompile Include="src\external\libzip\zip_discard.c" />
+    <ClCompile Include="src\external\libzip\zip_entry.c" />
+    <ClCompile Include="src\external\libzip\zip_err_str.c" />
+    <ClCompile Include="src\external\libzip\zip_error.c" />
+    <ClCompile Include="src\external\libzip\zip_error_clear.c" />
+    <ClCompile Include="src\external\libzip\zip_error_get.c" />
+    <ClCompile Include="src\external\libzip\zip_error_get_sys_type.c" />
+    <ClCompile Include="src\external\libzip\zip_error_strerror.c" />
+    <ClCompile Include="src\external\libzip\zip_error_to_str.c" />
+    <ClCompile Include="src\external\libzip\zip_extra_field.c" />
+    <ClCompile Include="src\external\libzip\zip_extra_field_api.c" />
+    <ClCompile Include="src\external\libzip\zip_fclose.c" />
+    <ClCompile Include="src\external\libzip\zip_fdopen.c" />
+    <ClCompile Include="src\external\libzip\zip_file_add.c" />
+    <ClCompile Include="src\external\libzip\zip_file_error_clear.c" />
+    <ClCompile Include="src\external\libzip\zip_file_error_get.c" />
+    <ClCompile Include="src\external\libzip\zip_file_get_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_file_get_offset.c" />
+    <ClCompile Include="src\external\libzip\zip_file_rename.c" />
+    <ClCompile Include="src\external\libzip\zip_file_replace.c" />
+    <ClCompile Include="src\external\libzip\zip_file_set_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_file_strerror.c" />
+    <ClCompile Include="src\external\libzip\zip_filerange_crc.c" />
+    <ClCompile Include="src\external\libzip\zip_fopen.c" />
+    <ClCompile Include="src\external\libzip\zip_fopen_encrypted.c" />
+    <ClCompile Include="src\external\libzip\zip_fopen_index.c" />
+    <ClCompile Include="src\external\libzip\zip_fopen_index_encrypted.c" />
+    <ClCompile Include="src\external\libzip\zip_fread.c" />
+    <ClCompile Include="src\external\libzip\zip_get_archive_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_get_archive_flag.c" />
+    <ClCompile Include="src\external\libzip\zip_get_compression_implementation.c" />
+    <ClCompile Include="src\external\libzip\zip_get_encryption_implementation.c" />
+    <ClCompile Include="src\external\libzip\zip_get_file_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_get_name.c" />
+    <ClCompile Include="src\external\libzip\zip_get_num_entries.c" />
+    <ClCompile Include="src\external\libzip\zip_get_num_files.c" />
+    <ClCompile Include="src\external\libzip\zip_memdup.c" />
+    <ClCompile Include="src\external\libzip\zip_name_locate.c" />
+    <ClCompile Include="src\external\libzip\zip_new.c" />
+    <ClCompile Include="src\external\libzip\zip_open.c" />
+    <ClCompile Include="src\external\libzip\zip_rename.c" />
+    <ClCompile Include="src\external\libzip\zip_replace.c" />
+    <ClCompile Include="src\external\libzip\zip_set_archive_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_set_archive_flag.c" />
+    <ClCompile Include="src\external\libzip\zip_set_default_password.c" />
+    <ClCompile Include="src\external\libzip\zip_set_file_comment.c" />
+    <ClCompile Include="src\external\libzip\zip_set_file_compression.c" />
+    <ClCompile Include="src\external\libzip\zip_set_name.c" />
+    <ClCompile Include="src\external\libzip\zip_source_buffer.c" />
+    <ClCompile Include="src\external\libzip\zip_source_close.c" />
+    <ClCompile Include="src\external\libzip\zip_source_crc.c" />
+    <ClCompile Include="src\external\libzip\zip_source_deflate.c" />
+    <ClCompile Include="src\external\libzip\zip_source_error.c" />
+    <ClCompile Include="src\external\libzip\zip_source_file.c" />
+    <ClCompile Include="src\external\libzip\zip_source_filep.c" />
+    <ClCompile Include="src\external\libzip\zip_source_free.c" />
+    <ClCompile Include="src\external\libzip\zip_source_function.c" />
+    <ClCompile Include="src\external\libzip\zip_source_layered.c" />
+    <ClCompile Include="src\external\libzip\zip_source_open.c" />
+    <ClCompile Include="src\external\libzip\zip_source_pkware.c" />
+    <ClCompile Include="src\external\libzip\zip_source_pop.c" />
+    <ClCompile Include="src\external\libzip\zip_source_read.c" />
+    <ClCompile Include="src\external\libzip\zip_source_stat.c" />
+    <ClCompile Include="src\external\libzip\zip_source_window.c" />
+    <ClCompile Include="src\external\libzip\zip_source_zip.c" />
+    <ClCompile Include="src\external\libzip\zip_source_zip_new.c" />
+    <ClCompile Include="src\external\libzip\zip_stat.c" />
+    <ClCompile Include="src\external\libzip\zip_stat_index.c" />
+    <ClCompile Include="src\external\libzip\zip_stat_init.c" />
+    <ClCompile Include="src\external\libzip\zip_strerror.c" />
+    <ClCompile Include="src\external\libzip\zip_string.c" />
+    <ClCompile Include="src\external\libzip\zip_unchange.c" />
+    <ClCompile Include="src\external\libzip\zip_unchange_all.c" />
+    <ClCompile Include="src\external\libzip\zip_unchange_archive.c" />
+    <ClCompile Include="src\external\libzip\zip_unchange_data.c" />
+    <ClCompile Include="src\external\libzip\zip_utf-8.c" />
+    <ClCompile Include="src\external\micropather\micropather.cpp" />
+    <ClCompile Include="src\external\physfs\archivers\dir.c" />
+    <ClCompile Include="src\external\physfs\archivers\zip.c" />
+    <ClCompile Include="src\external\physfs\extras\physfsrwops.c" />
+    <ClCompile Include="src\external\physfs\physfs.c" />
+    <ClCompile Include="src\external\physfs\physfs_byteorder.c" />
+    <ClCompile Include="src\external\physfs\physfs_unicode.c" />
+    <ClCompile Include="src\external\physfs\platform\beos.cpp" />
+    <ClCompile Include="src\external\physfs\platform\macosx.c" />
+    <ClCompile Include="src\external\physfs\platform\os2.c" />
+    <ClCompile Include="src\external\physfs\platform\pocketpc.c" />
+    <ClCompile Include="src\external\physfs\platform\posix.c" />
+    <ClCompile Include="src\external\physfs\platform\unix.c" />
+    <ClCompile Include="src\external\physfs\platform\windows.c" />
+    <ClCompile Include="src\external\physfs\zlib123\adler32.c" />
+    <ClCompile Include="src\external\physfs\zlib123\compress.c" />
+    <ClCompile Include="src\external\physfs\zlib123\crc32.c" />
+    <ClCompile Include="src\external\physfs\zlib123\deflate.c" />
+    <ClCompile Include="src\external\physfs\zlib123\gzio.c" />
+    <ClCompile Include="src\external\physfs\zlib123\infback.c" />
+    <ClCompile Include="src\external\physfs\zlib123\inffast.c" />
+    <ClCompile Include="src\external\physfs\zlib123\inflate.c" />
+    <ClCompile Include="src\external\physfs\zlib123\inftrees.c" />
+    <ClCompile Include="src\external\physfs\zlib123\trees.c" />
+    <ClCompile Include="src\external\physfs\zlib123\uncompr.c" />
+    <ClCompile Include="src\external\physfs\zlib123\zutil.c" />
+    <ClCompile Include="src\external\yam\yam.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\glad.cpp" />
+    <ClCompile Include="src\gloader.cpp" />
+    <ClCompile Include="src\gparser.cpp" />
+    <ClCompile Include="src\graphlib.cpp" />
+    <ClCompile Include="src\guy.cpp" />
+    <ClCompile Include="src\help.cpp" />
+    <ClCompile Include="src\input.cpp" />
+    <ClCompile Include="src\intro.cpp" />
+    <ClCompile Include="src\io.cpp" />
+    <ClCompile Include="src\level_data.cpp" />
+    <ClCompile Include="src\level_editor.cpp" />
+    <ClCompile Include="src\level_picker.cpp" />
+    <ClCompile Include="src\living.cpp" />
+    <ClCompile Include="src\obmap.cpp" />
+    <ClCompile Include="src\pal32.cpp" />
+    <ClCompile Include="src\picker.cpp" />
+    <ClCompile Include="src\pixie.cpp" />
+    <ClCompile Include="src\pixie_data.cpp" />
+    <ClCompile Include="src\pixien.cpp" />
+    <ClCompile Include="src\radar.cpp" />
+    <ClCompile Include="src\results_screen.cpp" />
+    <ClCompile Include="src\sai2x.cpp" />
+    <ClCompile Include="src\save_data.cpp" />
+    <ClCompile Include="src\screen.cpp" />
+    <ClCompile Include="src\smooth.cpp" />
+    <ClCompile Include="src\sound.cpp" />
+    <ClCompile Include="src\stats.cpp" />
+    <ClCompile Include="src\text.cpp" />
+    <ClCompile Include="src\treasure.cpp" />
+    <ClCompile Include="src\util.cpp" />
+    <ClCompile Include="src\video.cpp" />
+    <ClCompile Include="src\view.cpp" />
+    <ClCompile Include="src\walker.cpp" />
+    <ClCompile Include="src\weap.cpp" />
+    <ClCompile Include="util\savepng.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

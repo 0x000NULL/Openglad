@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external">
+      <UniqueIdentifier>{1F3C6D0D-0B9F-FCB1-B424-3568A066C834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\libyaml">
+      <UniqueIdentifier>{38B2C145-2441-4B0F-CD5F-5F0AB9CD5BB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\libyaml\include">
+      <UniqueIdentifier>{AB911973-974C-091F-4004-82692C9E53AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\libyaml\src">
+      <UniqueIdentifier>{4FCC5BD7-3BF1-AA57-643C-90E750C0A975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\libzip">
+      <UniqueIdentifier>{98AD2C40-040F-0A4E-8D7C-5000F9DC400D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\micropather">
+      <UniqueIdentifier>{0C857597-F8A9-C417-21F5-A9A70D79C335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\physfs">
+      <UniqueIdentifier>{2BB67B49-9717-5957-2085-9F098CE58F16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\physfs\archivers">
+      <UniqueIdentifier>{01691EC4-6D81-05EE-362E-9587A2059A87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\physfs\extras">
+      <UniqueIdentifier>{11F1C803-FD00-75D4-66BA-D9F252E9636D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\physfs\platform">
+      <UniqueIdentifier>{FFAEB778-EB69-A724-9421-206F80BBF1B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\physfs\zlib123">
+      <UniqueIdentifier>{817F9FB0-ED8C-CD96-7673-C981E27F994D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\external\yam">
+      <UniqueIdentifier>{1509F83B-0102-178E-2A34-FC12168CF699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{43339F7C-2F6A-A00D-D856-8610C46C1C0F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\base.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\campaign_picker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\colors.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\effect.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libyaml\include\yaml.h">
+      <Filter>src\external\libyaml\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libyaml\src\config.h">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libyaml\src\yaml_private.h">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libzip\config.h">
+      <Filter>src\external\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libzip\zip.h">
+      <Filter>src\external\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libzip\zipconf.h">
+      <Filter>src\external\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\libzip\zipint.h">
+      <Filter>src\external\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\micropather\micropather.h">
+      <Filter>src\external\micropather</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\extras\physfsrwops.h">
+      <Filter>src\external\physfs\extras</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\physfs.h">
+      <Filter>src\external\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\physfs_casefolding.h">
+      <Filter>src\external\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\physfs_internal.h">
+      <Filter>src\external\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\physfs_platforms.h">
+      <Filter>src\external\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\crc32.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\deflate.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\inffast.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\inffixed.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\inflate.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\inftrees.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\trees.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\zconf.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\zlib.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\physfs\zlib123\zutil.h">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClInclude>
+    <ClInclude Include="src\external\yam\yam.h">
+      <Filter>src\external\yam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gloader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gparser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graph.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\io.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\level_data.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\level_picker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\living.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\obmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pal32.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\palettes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\picker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pixdefs.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pixie.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pixie_data.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pixien.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\radar.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\results_screen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sai2x.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\save_data.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\screen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smooth.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\soundob.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sounds.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stats.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\text.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\treasure.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view_sizes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\walker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\weap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="util\savepng.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\button.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\campaign_picker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\effect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\api.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\dumper.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\emitter.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\loader.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\parser.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\reader.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\scanner.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libyaml\src\writer.c">
+      <Filter>src\external\libyaml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\mkstemp.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_add.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_add_dir.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_add_entry.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_close.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_delete.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_dir_add.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_dirent.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_discard.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_entry.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_err_str.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error_clear.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error_get.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error_get_sys_type.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error_strerror.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_error_to_str.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_extra_field.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_extra_field_api.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fclose.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fdopen.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_add.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_error_clear.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_error_get.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_get_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_get_offset.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_rename.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_replace.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_set_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_file_strerror.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_filerange_crc.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fopen.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fopen_encrypted.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fopen_index.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fopen_index_encrypted.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_fread.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_archive_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_archive_flag.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_compression_implementation.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_encryption_implementation.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_file_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_name.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_num_entries.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_get_num_files.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_memdup.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_name_locate.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_new.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_open.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_rename.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_replace.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_archive_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_archive_flag.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_default_password.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_file_comment.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_file_compression.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_set_name.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_buffer.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_close.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_crc.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_deflate.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_error.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_file.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_filep.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_free.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_function.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_layered.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_open.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_pkware.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_pop.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_read.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_stat.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_window.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_zip.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_source_zip_new.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_stat.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_stat_index.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_stat_init.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_strerror.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_string.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_unchange.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_unchange_all.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_unchange_archive.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_unchange_data.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\libzip\zip_utf-8.c">
+      <Filter>src\external\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\micropather\micropather.cpp">
+      <Filter>src\external\micropather</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\archivers\dir.c">
+      <Filter>src\external\physfs\archivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\archivers\zip.c">
+      <Filter>src\external\physfs\archivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\extras\physfsrwops.c">
+      <Filter>src\external\physfs\extras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\physfs.c">
+      <Filter>src\external\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\physfs_byteorder.c">
+      <Filter>src\external\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\physfs_unicode.c">
+      <Filter>src\external\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\beos.cpp">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\macosx.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\os2.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\pocketpc.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\posix.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\unix.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\platform\windows.c">
+      <Filter>src\external\physfs\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\adler32.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\compress.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\crc32.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\deflate.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\gzio.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\infback.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\inffast.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\inflate.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\inftrees.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\trees.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\uncompr.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\physfs\zlib123\zutil.c">
+      <Filter>src\external\physfs\zlib123</Filter>
+    </ClCompile>
+    <ClCompile Include="src\external\yam\yam.cpp">
+      <Filter>src\external\yam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gloader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gparser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphlib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\help.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\io.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\level_data.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\level_editor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\level_picker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\living.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obmap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pal32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\picker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pixie.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pixie_data.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pixien.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\radar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\results_screen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sai2x.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\save_data.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smooth.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sound.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stats.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\text.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\treasure.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\walker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="util\savepng.c">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
